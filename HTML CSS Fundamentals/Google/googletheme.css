@@ -74,9 +74,33 @@ header span{
 
 section.searchbar {
 	text-align: center;
+	padding: 0px 0px 20px 0px;
 }
 
 section.searchbar input{
 	height: 20px;
 	width: 500px;
+}
+
+section p {
+	text-align: center;
+}
+
+#search2 a{
+    padding: 10px 10px 10px 10px;
+}
+
+footer {
+	padding: 250px 0px 0px 0px;
+	width: 100%;
+}
+
+#leftfooter {
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+
+#rightfooter {
+	float: right;
+	padding: 10px 10px 10px 10px;
 }
