@@ -1,0 +1,19 @@
+body {
+	background-color: #42BCE8;
+	width: 500px;
+	margin: auto;
+}
+
+#wrap {
+	float: center;
+}
+
+ul {
+	text-align: center;
+	list-style: none;
+}
+
+ul li::first-letter {
+	font-size: 130%;
+	font-weight: bold;
+}
