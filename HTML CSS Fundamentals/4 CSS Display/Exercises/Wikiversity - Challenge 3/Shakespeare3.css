@@ -25,9 +25,7 @@ body {
 }
 
 .copyright {
-	position: relative;
-	top: 40px;
-	z-index: -1;
+	transform: translate(0px, 40px);
 }
 
 #content ul{
