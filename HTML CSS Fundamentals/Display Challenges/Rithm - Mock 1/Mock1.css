@@ -1,0 +1,45 @@
+header {
+	background-color: white;
+}
+
+#main div {
+	margin:auto;
+}
+
+.two_box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 30px 10px 30px 10px;
+	justify-content: space-between;
+	width: 70%;
+	height: 25%;
+	align-items: flex-start;
+}
+
+.bluebox {
+	width: 100px;
+	height: 100px;
+	background-color: #81CBFF;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	flex-grow: 1;
+}
+
+.redbox {
+	width: 100px;
+	height: 100px;
+	background-color: #FF9590;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	flex-grow: 3;
+}
+
+.yellowbox {
+	width: 100px;
+	height: 100px;
+	background-color: #FFF0A0;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	flex-grow: 1;
+}

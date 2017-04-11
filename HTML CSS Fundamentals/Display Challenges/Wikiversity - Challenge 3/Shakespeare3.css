@@ -1,0 +1,37 @@
+body {
+	background-color: #1E5569;
+	width: 600px;
+	margin:auto;
+}
+
+#wrap {
+	overflow: hidden;
+}
+
+#nav {
+	width: 20%;
+	float: left;
+	background-color: #8CD9FF;
+	padding-bottom: 1000px;
+	margin-bottom: -1000px;
+}
+
+#content {
+	width: 80%;
+	float: right;
+	background-color: #4D8BAB;
+	text-align: center;
+	overflow: visible;
+}
+
+.copyright {
+	position: relative;
+	top: 40px;
+	z-index: -1;
+}
+
+#content ul{
+	list-style: none;
+}
+
+/* Issue with .copyright not overflowing to the end of the box.  Raise with Elie. */
