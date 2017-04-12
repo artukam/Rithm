@@ -1,0 +1,15 @@
+.col-4, .col-6, .col-12 {
+	width: 100%;
+}
+
+@media(min-width: 765px) {
+	.col-4 {
+		width: 50%;
+	}
+}
+
+@media(min-width: 960px) {
+	.col-6 {
+		width: 50%;
+	}
+}

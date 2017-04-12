@@ -1,0 +1,15 @@
+What is em?
+
+em is a relative unit of measurement used in HTML/CSS that is relative to the current font size with a certain element. 
+
+What is the difference between em and rem?
+
+rem (Root em) is the same as em with the only difference that rem is a reference to the font size of the root meaning the font sized defined in the html element.
+
+What is "mobile first" design?
+
+Mobile first design is the design philosphy that we should design for mobile devices first before computer browsers.  This philosophy was adopted due to the rise of mobile device use around the world being the primary method of accessing websites.
+
+What is BEM?
+
+BEM stands for Block Element Modifier and is a methodology/approach to coding HTML/CSS and other languages (including Javascript).  The approach is designed to streamline the methodology of programmers to reduce the amount of code written and to serve as a guideline for teams to work together.
