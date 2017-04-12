@@ -1,0 +1,40 @@
+Part 1
+
+1. true
+2. true
+3. 1
+4. true
+5. false
+6. true
+7. true
+
+Part 2
+
+isLearning problem
+1. "Keep it up!"
+2. An if condition only needs to have either true or false returned.  Since isLearning has a true value, it will work on its own.
+
+variable problem
+1. third
+2. undefined
+3. No, because undefined is a falsey value.
+4. No, because an empty string is a falsey value.
+5. Yes, because a number that is not zero is not a falsey value.
+
+Part 3
+
+1.
+
+if (Math.random() > 0.5) {
+	console.log ("Over 0.5");
+} else {
+	console.log ("Under 0.5");
+}
+
+2. The falsey values are:
+- false
+- null
+- undefned
+- NaN
+- 0
+- "" (empty string)
