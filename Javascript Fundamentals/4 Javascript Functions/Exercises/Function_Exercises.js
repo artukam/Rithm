@@ -86,5 +86,27 @@ function multipleLetterCount(string) {
 //Q2
 
 function arrayManipulation(array, command, location, value) {
-	
+	if (command === "remove" && location === "end") {
+		return array.pop(array[array.length - 1]);
+	} else if (command === "remove" && location === "beginning") {
+		return array.shift(array[0]);
+	} else if (command === "add" && location === "beginning") {
+		array.unshift(value);
+		return array;
+	} else if (command === "add" && location === "end") {
+		array.push(value);
+		return array;
+	}
 }
+
+//Q3
+
+function isPalindrome(string) {
+	var reverseString = string.split("").reverse().join("");
+	if (string === reverseString) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
