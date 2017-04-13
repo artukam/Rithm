@@ -110,3 +110,45 @@ function isPalindrome(string) {
 	}
 }
 
+//Part 3
+
+//Scissors, paper, rock.
+
+function jankenpon() {
+	var playerChoice = prompt("Choose your weapon (scissors, paper or rock)!").toLowerCase();
+	while ("rockpaperscissors".indexOf(playerChoice) === -1) {
+		playerChoice = prompt("Invalid choice, choose your weapon (scissors, paper or rock)!").toLowerCase();
+	}
+	var randomNumber = Math.floor(Math.random() * 3);
+	var computerChoice;
+	if (randomNumber === 0) {
+		computerChoice = "scissors";
+	} else if (randomNumber === 1) {
+		computerChoice = "paper";
+	} else {
+		computerChoice = "rock";
+	}
+
+	if (playerChoice === computerChoice) {
+		return "It's a tie!"
+	} else if (playerChoice === "scissors") {
+		if (computerChoice === "paper") {
+			return "You win!";
+		} else if (computerChoice === "rock") {
+			return "You lose!";
+		}
+	} else if (playerChoice === "paper") {
+		if (computerChoice === "rock") {
+			return "You win!";
+		} else if (computerChoice === "scissors") {
+			return "You lose!";
+		}
+	} else if (playerChoice === "rock") {
+		if (computerChoice === "scissors") {
+			return "You win!";
+		} else if (computerChoice === "paper") {
+			return "You lose!";
+		}
+	}
+}
+
