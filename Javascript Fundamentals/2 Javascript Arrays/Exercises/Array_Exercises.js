@@ -2,8 +2,8 @@ var people = ["Greg", "Mary", "Devon", "James"]
 
 // Q1
 
-people.every(function(value) {
-	return console.log(value);
+people.forEach(function(value) {
+	console.log(value);
 })
 
 //Q2

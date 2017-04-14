@@ -1,0 +1,38 @@
+What does the throw keyword do?
+The throw keyword stops the execution of a try statement and returns the values within the throw statement.  The catch statement will be executed afterwards.
+
+What does the finally keyword do?
+The finally keyword contains code that will execue regardless of whether the try statement or catch statement is successful or not.
+
+What is the difference between a TypeError and ReferenceError?
+A type error occurs when a specific data type is used in a way that it is not intended (e.g. when a method does not exist for a number - like trying to use toLowerCase()).  A reference error occurs where there is an invalid reference (e.g. referring to a variable that has not been declared or does not exist).
+
+How do you create a snippet in the chrome dev tools?
+1) go to about:blank in chrome
+2) type f12
+3) click the sources tab
+4) click the snippets tab
+5) click new snippet
+
+In the Chrome dev tools, on the right hand side of the sources tab, there is a pause button which allows you to pause on caught exceptions.  What is an exception?
+An exception is basic and error in code (e.g. reference error) - you use this function to find where errors are.
+
+How do we catch errors in Javascript?  Give an example with code for what that might look like.
+We catch errors in Javascript by using try/catch statements.  A try statement tests a box of code for an error and if an error exists the catch statement will execute.
+
+For example:
+
+try {
+	person;
+}
+
+catch(error) {
+	console.log("The error is", error.name)
+}
+
+Explain what type of error will be thrown
+
+1. Reference error as 'person' is not defined.  Fix this by adding var to the front.
+2. Type error is provided as displayInfo is not a function for data.  Fix this by declaring a prototype function for data.
+3. Type error is provided as displayInfo is not a property for data and is therefore undefined.  Fix this by declaring displayInfo as a property of data and declare it as an object.
+4. Reference error as thing is not defined in the global scope - it is only defined in the local scope of a data().  Declare thing in the global scope by using var thing = data () and within the data() function using a return statement to return the value of thing.
