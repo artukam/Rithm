@@ -1,0 +1,17 @@
+/*
+What is the difference between setInterval and setTimeout?
+setTimeout executes a certain function once after a set period of time.  setInterval executs a certain function a number of times separated by a set period of time.
+
+What is the difference between using setInterval and a loop? Why would you want to choose one over the other?
+A setInterval executes a function many times over a period time while a loop iterates over a function instantaneously.  You would only choose setInterval if you needed to included some sort of time element in the execution of a function.
+
+What is the first parameter that setInterval and setTimeout accept?
+The callback function to be executed.
+
+Why is it so important to store the result of setInterval and setTimeout in a variable?
+The variable for setInterval and setTimeout is called the timerId - it is important as it is later used to clear a timer for a function using clearTimeout.
+
+What does asynchronous mean in the context of setTimeout and setInterval?
+It means code executed at a later point in time.
+
+*/
