@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button class="first_button">Click me first!</button>
+    <button class="second_button" >Click me second!</button>
+    <button class="third_button">Click me third!</button>
+    <script>
+        var buttons = document.getElementsByTagName("button");
+
+        for(var i=0; i<buttons.length; i++){
+            buttons[i].addEventListener("click", alertData);
+        }
+
+        // since we have named our function, we know which one to remove
+        for(var i=0; i<buttons.length; i++){
+            buttons[i].removeEventListener("click", alertData);
+        }
+    </script>
+</body>
+</html>
