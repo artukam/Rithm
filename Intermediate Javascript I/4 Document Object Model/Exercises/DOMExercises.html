@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+    <script>
+        /*Select the section with an id of container without using query selector */
+        var container = document.getElementById("container");
+        /*Select the section with an id of container using querySelector*/
+        var containerQuery = document.querySelector("#container");
+        /*Select all of the list items with a class of "second" */
+        var secondClass = document.getElementsByClassName("second");
+        /*Select a list item with a class of third, but only the list item inside of the ol tag*/
+        var orderedThirdList = document.getElementsByClassName("ol.third");
+        /*Give the section with the id of container the text "Hello!"*/
+        container.innerHTML = "Hello!";
+        /*Add the class main to the div with a class of footer*/
+        var footer = document.getElementByClassName("footer");
+        footer.classList.add("main");
+        /*Remove the class main on the div with a class of footer*/
+        footer.classList.remove("main");
+        /*Create a new li element*/
+        var newListItem = document.createElement("li");
+        /*Give the li the text "four"*/
+        newListItem.innerText = "four";
+        var unorderedThirdList = querySelector("ul");
+        unorderedThirdList.appendChild(newListItem);
+        /*Loop over all the li tags inside the ol tag and give them a background color of green*/
+        var orderedList = document.querySelectorAll("ol li");
+        for (var i = 0; i < orderedList.children; i++) {
+            orderedList[i].style["background-color"] = green;
+        }
+        /*Remove the div with the class of footer*/
+        container.removeChild(footer);
+    </script>
+</body>
+</html>

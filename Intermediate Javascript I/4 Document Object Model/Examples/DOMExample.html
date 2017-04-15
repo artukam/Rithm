@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body id= "container">
+    <div class="hello">
+        Hello World
+    </div>
+    <div class="hello">
+        Hello Everyone!
+    </div>
+    <a href="#">This link goes nowhere!</a>
+    <button>Click me!</button>
+    <script async>
+        
+        var firstDiv = document.getElementsByTagName("div")[0];
+        firstDiv.innerText = "Just changed!";
+        firstDiv.style.color = "red";
+        firstDiv.style.backgroundColor = "teal";
+        firstDiv.style["background-color"] = "blue";
+        
+        var secondDiv = document.getElementsByTagName("div")[1];
+        secondDiv.innerText = "Just changed Again!";
+        secondDiv.classList; // ["hello"]
+        secondDiv.classList.add("another_class"); 
+        secondDiv.classList; // ["hello", "another_class"]
+        secondDiv.classList.remove("hello"); 
+        secondDiv.classList; // [another_class"]
+
+
+        var newDiv = document.createElement("div");
+        newDiv.innerHTML ="What does the fox say?";
+        alert(newDiv.innerHTML);
+        document.body.append(newDiv);
+
+        var button = document.createElement("button");
+        button.innerText = "I am a button created with JavaScript!";
+
+        var container = document.getElementById("container");
+        container.appendChild(button);
+
+        var linkToBeRemoved = document.querySelector("a");
+
+        var container = document.getElementById("container");
+        container.removeChild(linkToBeRemoved);
+
+        var divs = document.querySelectorAll("div");
+        for(var i = 0; i < divs.length; i++){
+            divs[i].style.backgroundColor = "red"; // this will work!
+        }
+    </script>
+</body>
+</html>
