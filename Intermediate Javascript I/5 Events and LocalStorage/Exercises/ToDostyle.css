@@ -14,12 +14,12 @@ nav h1 {
 
 .to-do {
 	padding-top:10px;
-	padding-bottom:20px;
+	padding-bottom:10px;
 }
 
 .to-do h2 {
 	color: #595959;
-	padding-bottom:10px;
+	padding-bottom:5px;
 }
 
 .completed-tasks {
@@ -38,4 +38,14 @@ nav h1 {
 
 .checkbutton:hover {
 	background-color: #B0FFB1;
+}
+
+.clear-box {
+	padding-top: -15px;
+	padding-bottom: 5px;
+}
+
+.label-danger {
+	font-size: 1rem;
+	cursor: pointer;
 }
