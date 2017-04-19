@@ -1,0 +1,11 @@
+What is jQuery? What does it enable you to do?
+
+jQuery is a Javascript library/framework that helps speed up programming for the DOM.
+
+What is the difference between a jQuery object and HTML Element?
+
+A jQuery object is an array-like object that stores unique ids of a collection of HTML Elements.
+
+What does the $ represent in jQuery?
+
+The $ sign represents a selector for HTML Elements - it replaces the Javascript notation of querySelector and .getElementByID etc.
