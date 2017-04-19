@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <button>Click me to make a new div!</button>
+  <div id="container"></div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      var count = 0;
+      $("button").on("click", function(){
+        var $newDiv = $("<div>", {
+          text: "div number " + count
+        });
+        count++;
+        $("#container").append($newDiv);
+      });
+      $("#container").on("click", "div", function(e){
+         console.log("You just clicked on ", $(e.target).text());
+      });
+    });
+  </script>
+</body>
+</html>
