@@ -19,13 +19,20 @@
 	text-align: center;
 }
 .icon-holder {
-	display: inline;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	left: 60%;
+	top: -20px;
 }
 
-#sort-icon-down-letter, #sort-icon-up-letter {
-	display: inline;
+.glyphicon-chevron-up {
+	display: block;
+	position: relative;
 }
 
-#sort-icon-down-number, #sort-icon-up-number {
-	display: inline;
+.glyphicon-chevron-down {
+	display: block;
+	position: relative;
 }
+
