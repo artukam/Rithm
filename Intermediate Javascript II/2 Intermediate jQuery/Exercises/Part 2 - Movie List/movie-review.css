@@ -1,0 +1,20 @@
+.movie-box {
+	width: 80%;
+}
+
+.page-title {
+	text-align:center;
+	padding-bottom: 20px;
+}
+
+#movie-rating {
+	width: 250px;
+}
+
+.movie-form {
+	padding-bottom: 20px;
+}
+
+.table-text th, td {
+	text-align: center;
+}
