@@ -1,23 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
   var wordCount = 15;
   var guessCount = 4;
   var password = '';
 
-  var start = document.getElementById('start');
-  start.addEventListener('click', function() {
-    toggleClasses(document.getElementById('start-screen'), 'hide', 'show');
-    toggleClasses(document.getElementById('game-screen'), 'hide', 'show');
+  $("#start").on('click', function() {
+    toggleClasses($("#start-screen"), 'hide', 'show');
+    toggleClasses($("#game-screen"), 'hide', 'show');
     startGame();
   });
 
   function startGame() {
     // get random words and append them to the DOM
-    var wordList = document.getElementById("word-list");
+    var $wordList = $("#word-list");
     var randomWords = getRandomValues(words, wordCount);
     randomWords.forEach(function(word) {
       var li = document.createElement("li");
       li.innerText = word;
-      wordList.appendChild(li);
+      $wordList.append(li);
     });
 
     // set a secret password and the guess count display
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setGuessCount(guessCount);
 
     // add update listener for clicking on a word
-    wordList.addEventListener('click', updateGame);
+    $wordList.on("click", updateGame);
   }
 
   function updateGame(e) {
@@ -33,17 +32,18 @@ document.addEventListener('DOMContentLoaded', function() {
       // grab guessed word, check it against password, update view
       var guess = e.target.innerText;
       var similarityScore = compareWords(guess, password);
+      var $wordList = $("#word-list");
       e.target.classList.add("disabled");
       e.target.innerText = e.target.innerText + " --> Matching Letters: " + similarityScore;
       setGuessCount(guessCount - 1);
 
       // check whether the game is over
       if (similarityScore === password.length) {
-        toggleClasses(document.getElementById("winner"), 'hide', 'show');
-        this.removeEventListener('click', updateGame);
+        toggleClasses($("#winner"), 'hide', 'show');
+        $wordList.off('click', updateGame);
       } else if (guessCount === 0) {
-        toggleClasses(document.getElementById("loser"), 'hide', 'show');
-        this.removeEventListener('click', updateGame);
+        toggleClasses($("#loser"), 'hide', 'show');
+        $wordList.off('click', updateGame);
       }
     }
   }
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function toggleClasses(element) {
     for (var i = 1; i < arguments.length; i++) {
-      element.classList.toggle(arguments[i]);
+      element.toggleClass(arguments[i]);
     }
   }
 
