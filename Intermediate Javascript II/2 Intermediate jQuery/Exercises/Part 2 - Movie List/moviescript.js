@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	var $form = $("form");
 	var $table = $("table");
+	var $tableBody = $("tbody");
 	var storage = [];
 	
 	//Create new form item
@@ -23,22 +24,40 @@ $(document).ready(function() {
 		newButton.addClass("btn btn-danger");
 		newButton.attr("type", "button");
 		newButton.text("Delete");
-		$table.append(newRow);
+		$tableBody.append(newRow);
 		newRow.append(newMovie);
 		newRow.append(newRating);
 		newRow.append(newDelete);
 		newDelete.append(newButton);
 		newButton.on("click", function(event){
 			event.preventDefault();
+			if (storage.length > 0) {
+				for (var i = 0; i < storage.length; i++) {
+					if (storage[i]["movieTitle"] === newMovie.text()) {
+						storage.splice(i,1);
+						break;
+					}
+				}
+			}
+			localStorage.setItem("MovieList", JSON.stringify(storage))
 			newRow.remove();
 		})
 		storage.push({
 			movieTitle: title,
 			movieRating: rating
 		});
+		localStorage.setItem("MovieList", JSON.stringify(storage));
+		$form.trigger("reset");
 	}
-	//Sort movies by ascending order
-
+	//Sort movies by ascending order (title)
+	$("#sort-icon-up-letter").on("click", function(event) {
+		if (storage.length > 0) {
+			storage = sortTitlesArray(storage, "ascending");
+			$tableBody.empty();
+			createRowsFromArray(storage);
+			localStorage.setItem("MovieList", JSON.stringify(storage));
+		}
+	})
 
 	//Sort objects in array by titles
 	function sortTitlesArray(array, direction) {
@@ -86,8 +105,9 @@ $(document).ready(function() {
 
 	//Create rows from arrays with objects
 	function createRowsFromArray(array) {
-		for (var i = 0; i < array.length; i++) {
-			createRow(array[i]["movieTitle"], array[i]["movieRating"]);
+		var dummyArray = array.concat();
+		for (var i = 0; i < dummyArray.length; i++) {
+			createRow(dummyArray[i]["movieTitle"], dummyArray[i]["movieRating"]);
 		}
 	}
 })
