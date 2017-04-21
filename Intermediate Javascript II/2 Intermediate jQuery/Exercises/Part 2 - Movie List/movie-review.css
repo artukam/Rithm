@@ -18,3 +18,14 @@
 .table-text th, td {
 	text-align: center;
 }
+.icon-holder {
+	display: inline;
+}
+
+#sort-icon-down-letter, #sort-icon-up-letter {
+	display: inline;
+}
+
+#sort-icon-down-number, #sort-icon-up-number {
+	display: inline;
+}
