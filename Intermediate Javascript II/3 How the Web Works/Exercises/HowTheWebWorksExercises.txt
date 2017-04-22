@@ -55,7 +55,7 @@ What happens when you type in "Hello World" in google.com and press enter?
 3) Your web browser deciphers the page and sends additional requests to google for other resources as required.
 
 What does it mean when we say the web is "stateless"?
-'Stateless' means 
+'Stateless' means each request is independent and therefore is unaffected by each previous and subsequent request.
 
 What is curl?
 curl is a terminal command that retrieves certain HTTP information from terminal.
