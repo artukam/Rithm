@@ -1,0 +1,64 @@
+What is HTTP?
+HTTP standards for HyperText Transfer Protocol, this is the protocol used to send and receive information between computers on the internet.
+
+What is a URL?
+URL stands for Uniform Resource Locator and it is the human-plain-english name attributed to the domain name of a website in place of just its IP address.
+
+What is TCP?
+TCP is the transmission control protocol - this is the protocol in charge of sending and checking that all packages for a file have been sent/received.
+
+What is IP?
+IP is the internet protocol and this is the protocol which governs how the internet functions.
+
+What is DNS?
+DNS is the Domain Name Server - which is like a giant yellow pages that matches certain URLs with the actual IP addresses and sends that IP address back to a requester.
+
+What is idempotent?
+Idempotent means a type of request (or header) that stays the same re: information requested and given and rarely deviates off a standard form.
+
+What is a query string?
+A query string is any additional informaton provided by a client to the server.
+
+What is a path or route?
+A path or route is the way packets of data travel from a server to the client.  These paths/routes are never direct and can take a number of routes depending on the relationship/time/politics between the client country + server country.
+
+List four HTTP Verbs and their use cases.
+Get - a request to receive information from a server.
+Post - information submitted to a server.
+Patch - used to modify information on a server that is usually pre-existing.
+Delete - used to delete information off a server.
+
+What is a client?
+A client is anyone computer that requests information from a server.
+
+What is a server?
+A server is a computer that hosts informations and answers requests from clients to provide information.
+
+What is an HTTP request?
+A HTTP request is a request made by a client to retrieve access to a website or any other information from a server.
+
+What is an HTTP response?
+A HTTP response is a response made by a server in relation to a request made by the client to provide information from the server.
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+HTTP header are additional information provided in relation to request/responses - these may include browser version, username of client, cookies and the html text of the page requested.
+
+What is REST?
+REST (REpresentation State Transfer) is a framework that guides the philosophy behind the design of an API.
+
+What is JSON?
+JSON (JavaScript Object Notation) is a form of notation used to store information of objects in text form.
+
+What happens when you type in "Hello World" in google.com and press enter?
+1) You send a get request to google to retrieve page lists for hello world.
+2) Google compiles the search and sends back a response containing the page.
+3) Your web browser deciphers the page and sends additional requests to google for other resources as required.
+
+What does it mean when we say the web is "stateless"?
+'Stateless' means 
+
+What is curl?
+curl is a terminal command that retrieves certain HTTP information from terminal.
+
+Make a GET request to http://omdbapi.com?t=titanic using curl (your answer should be the curl command required).
+curl -v 'http://omdbapi.com?t=titanic' \
