@@ -1,0 +1,31 @@
+Where else have you seen 'asynchronous' code before? Think back to a certain section in Part I of the Intermediate JavaScript course.
+Using setTimeout and setInterval to create code that looks like its exercising at a time interval.
+
+What is XHR?
+XML Http Request - its an API the allows for the transfer for data between a client and a server and allows for asynchronous programming (allow pages to retrieve data without refreshing).
+
+What is XML? Why do we prefer to use JSON?
+XML is a mark-up language used to store data, unlike HTML you define your own tags.  We prefer JSON because it is transferred faster and easier to read.  It's also great to use if you're programming in Javascript as the data strcutures can be better utilised by pre-existing functions/methods.
+
+What is AJAX?
+Asynchronous Javascript and XML - a set of technologies that allow us to make single page websites that refresh data in real time.
+
+Using the XHR object, make a request to https://omdbapi.com and choose a title to search by using the query string and key of t.
+var XHRObj = new XMLHttpRequest();
+XHRObj.onreadystatechange = function () {
+	if (XHRObj.readystate == 4 && XHRObj.status == 200) {
+		console.log(JSON.parse(XHRObj.responseText));
+	}
+};
+XHR.open("GET", "[URL]");
+XHR.send();
+
+
+Using the fetch API, make a request to https://omdbapi.com and choose a title to search by using the query string and key of t.
+
+fetch('[URL').then function(response) {
+	return response.json().then(function(data) {
+		console.log(data);
+	});
+};
+

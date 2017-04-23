@@ -1,0 +1,30 @@
+.body-background {
+	background-color: black;
+}
+
+.container-fluid {
+	text-align: center;
+
+}
+
+.header-box {
+	color: white;
+	background-color: #262626;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.gif-form-box {
+	background-color: #181818;
+	padding-top: 10px;
+	padding-bottom:10px;
+	margin-bottom: 30px;
+}
+
+.gif-holder {
+	width: 80%;
+}
+
+.gif-displayed {
+	margin: 10px 10px 10px 10px;
+}
