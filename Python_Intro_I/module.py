@@ -20,7 +20,7 @@ Q6
 Ordereddict would be useful if you needed to keep track on the order of when certain items were entered into a dict.
 
 Q7
-Defaultdict is useful where you need to check whether certain keys exist in a dict as it returns None.
+Defaultdict is useful where you need to add multiple values to one key - the values are stored in a list.
 
 Q8
 This code checks to see if the file is being directly run or being imported.  If it is directly run it will import the 
