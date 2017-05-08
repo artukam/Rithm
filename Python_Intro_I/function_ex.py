@@ -192,3 +192,19 @@ def add(a,b):
 
 one_addition = once(add)
 print(one_addition(2,2))
+
+#once with decorators
+def once_dec(fn):
+  def inner(*args):
+    if inner.status:
+      inner.status = False
+      return fn(*args)
+  inner.status = True
+  return inner
+ 
+@once_dec
+def adder(a,b):
+  return a+b
+
+print(adder(10,10))
+print(adder(20,20))
