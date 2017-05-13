@@ -1,0 +1,140 @@
+.site-header {
+	background-color:#15003c;
+	color:white;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.offense-header {
+	background-color:#FF5531;
+	color:white;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.graph-container {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+.Chelsea {
+	fill:#034694;
+	stroke-width:2;
+	stroke:#065dc3;
+}
+
+.Chelsea:hover {
+	fill:#065dc3;
+}
+
+.btn-chelsea-active {
+	background-color:#034694;
+	color:white;
+}
+
+.btn-chelsea-active:hover {
+	background-color:#065dc3;
+	color:white;
+}
+
+.Manchester_U {
+	fill:#DA020E;
+	stroke-width:2;
+	stroke:#FFE500;
+}
+
+.Manchester_U:hover {
+	fill:#DA5E57
+}
+
+.btn-man-u-active {
+	background-color:#DA020E;
+	color:white;
+}
+
+.btn-man-u-active:hover {
+	background-color:#DA5E57;
+	color:white;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-players-inactive{
+	color:white;
+	background-color:#5C3F82;
+}
+
+.btn-players-inactive:hover{
+	color:white;
+	background-color:#9969D9;
+}
+
+.btn-players-active {
+	color:white;
+	background-color:#FF5531;
+}
+
+.btn-players-active:hover {
+	color:white;
+	background-color:#FF8368;
+}
+
+.axis text{
+	fill: #15003c;
+}
+
+.axis path {
+	stroke: #15003c;
+}
+
+.axis line {
+	stroke: #15003c;
+}
+
+.Defender {
+	display:block;
+}
+
+.Midfielder {
+	display:block;
+}
+
+.Forward{
+	display:block;
+}
+
+.hide-label {
+	display:none;
+}
+
+.hide-label-year {
+	display:none;
+}
+
+.tool-tip {
+	position: absolute;
+	text-align: center;
+	width: 120px;
+	height: 50px;
+	padding: 2px;
+	font: 9px sans-serif;
+	color:white;
+	background-color: #15003c;
+	border: 0px;
+	border-radius: 10px;
+	pointer-events: none;
+}
+
+.tool-tip-text {
+	padding:-10px;
+	margin:1px;
+}
